@@ -16,7 +16,7 @@ we have three main headers in elf binaries format. **file header, program header
 - **Program header**: An executable or shared object file's program header table is an array of structures, each describing a segment or other information the system needs to prepare the program for execution. 
 - **Section header**: The section header **allows you to locate all of the file sections**. An entry in a section header table contains information characterizing the data in a section. Description: One-bit descriptions of section attributes
 
-in this project, I extract headers [using these structures](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format#:~:text=In computing%2C the Executable and,shared libraries%2C and core dumps.) for 64/32 bit. for better user experience I use some packages to print in terminals, install them using the following instruction. 
+in this project, I extract headers [using these structures](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) for 64/32 bit. for better user experience I use some packages to print in terminals, install them using the following instruction. 
 
  
 
