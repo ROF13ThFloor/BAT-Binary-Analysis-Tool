@@ -1,0 +1,15 @@
+digraph "output/TestedBin/64-sys-callfunc" {
+	func1 [label="func1   syscalls : 234  " attrs="   syscalls : 234  "]
+	getpid [label="getpid   syscalls : " attrs="   syscalls : "]
+	syscall [label="syscall   syscalls : " attrs="   syscalls : "]
+	"UNKNOWNdword ptr [edi + ebx*8]" [label="UNKNOWNdword ptr [edi + ebx*8]   syscalls : " attrs="   syscalls : "]
+	main [label="main   syscalls : 60  60  60  " attrs="   syscalls : 60  60  60  " shape=circle]
+	func1 -> getpid [label=call]
+	getpid -> func1 [label=ret]
+	func1 -> syscall [label=call]
+	syscall -> func1 [label=ret]
+	__libc_csu_init -> "UNKNOWNdword ptr [edi + ebx*8]" [label=call]
+	"UNKNOWNdword ptr [edi + ebx*8]" -> __libc_csu_init [label=ret]
+	main -> func1 [label=call]
+	func1 -> main [label=ret]
+}

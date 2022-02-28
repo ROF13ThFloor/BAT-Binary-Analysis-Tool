@@ -1,0 +1,6 @@
+5
+main func1 printf 
+func1 func2 
+main strcpy func2  
+strcpy main func2 
+main strcpy 
