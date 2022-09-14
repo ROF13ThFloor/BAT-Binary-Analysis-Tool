@@ -1,10 +1,10 @@
 # BAT - Binary Analysis tool 
 
-in this project, I designed and implement a binary analysis tool for elf binary format files. this project is split into three main tasks. 
+In this project, I designed and implemented a binary analysis tool for files in ELF binary format. This project includes three main sections:
 
-- **in this part I read binary main header content and print it as result** An executable file (a ’.exe’ in windows) or an elf binary in Linux is not just made up of machine instructions, there are various sections and metadata embedded into the file. this project was designed for both 32/64 bit structure
-- **at the second stage of this project I wrote a dis-assembler for the input binary files, dis-assembler** is a tool that extracts instruction in binary format using section header metadata. 
-- **at the third stage of this project I wrote a Call-Graph extractor for binary files,** Call graph extractor needs to know every dynamic and symbol-function address in binaries, therefore extracting dynamic symbol tables is another task that is done in this project. 
+- **First, I read a binary main header content and print it as the result of an executable file (ex. an ’.exe’ file in windows) or an ELF binary (in Linux). It is not just made up of instructions in machine language, there are various sections and embedded metadata in this file. This project works for both 32/64 bit structures.
+- **Second, I wrote a dis-assembler for input binary files as the input. Dis-assembler is a tool that extracts instruction in binary format using metadata in header section. 
+- **Finally, I wrote a call-graph extractor for binary files. call-graph extractor needs to know every single dynamic and symbol-function address in binaries, therefore extracting dynamic symbol tables is another task that in this project.
 
 
 
