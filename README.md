@@ -2,9 +2,9 @@
 
 In this project, I designed and implemented a binary analysis tool for files in ELF binary format. This project includes three main sections:
 
-- **First, I read a binary main header content and print it as the result of an executable file (ex. an ’.exe’ file in windows) or an ELF binary (in Linux). It is not just made up of instructions in machine language, there are various sections and embedded metadata in this file. This project works for both 32/64 bit structures.
-- **Second, I wrote a dis-assembler for input binary files as the input. Dis-assembler is a tool that extracts instruction in binary format using metadata in header section. 
-- **Finally, I wrote a call-graph extractor for binary files. call-graph extractor needs to know every single dynamic and symbol-function address in binaries, therefore extracting dynamic symbol tables is another task that in this project.
+- First, I read a binary main header content and print it as the result of an executable file (ex. an ’.exe’ file in windows) or an ELF binary (in Linux). It is not just made up of instructions in machine language, there are various sections and embedded metadata in this file. This project works for both 32/64 bit structures.
+- Second, I wrote a dis-assembler for input binary files as the input. Dis-assembler is a tool that extracts instruction in binary format using metadata in header section. 
+- Finally, I wrote a call-graph extractor for binary files. call-graph extractor needs to know every single dynamic and symbol-function address in binaries, therefore extracting dynamic symbol tables is another task that in this project.
 
 
 
