@@ -1,4 +1,4 @@
-# BAT - Binary Analysis tool 
+# ELFInspect
 
 BAT (Binary Analysis Tool) is a Python-based utility designed to analyze ELF (Executable and Linkable Format) binary files. It offers functionalities for inspecting ELF headers, disassembling code sections, visualizing control flow graphs, and detecting potential vulnerabilities using syscall patterns.
 
@@ -101,48 +101,19 @@ Sample ELF binaries are available in the `TestedBin` directory for quick testing
 ## **Project Structure**
 
 ```
-BAT-Binary-Analysis-Tool/
-│-- README.md
-│-- requirements.txt
-│-- setup.py
+ELFInspect/
+│-- BAT_Part2.py              # Main script for ELF binary analysis
+│-- readelf.py                # Module for parsing ELF files
+│-- dfs.py                    # Utility module (graph traversal)
+│-- attr_types.py             # Attribute type definitions
+│-- FuncCallPattern.txt        # Function call pattern definitions
+│-- SyscallPattern.txt         # Syscall detection patterns
+│-- requirements.txt           # List of dependencies
+│-- README.md                  # Project documentation
 │
-├── bin/
-│   ├── example1.elf
-│   ├── example2.elf
-│
-├── src/
-│   ├── __init__.py
-│   ├── BAT_Part2.py
-│   ├── header_extractor.py
-│   ├── disassembler.py
-│   ├── call_graph_generator.py
-│
-├── data/
-│   ├── FuncCallPattern.txt
-│   ├── SyscallPattern.txt
-│
-├── output/
-│   ├── example1_graph.png
-│   ├── analysis_results.txt
-│
-├── tests/
-│   ├── test_header_extractor.py
-│   ├── test_disassembler.py
-│   ├── test_call_graph_generator.py
-│
-├── docs/
-│   ├── installation_guide.md
-│   ├── usage_guide.md
-│   ├── api_reference.md
-│
-├── images/
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   ├── 3.jpg
-│
-├── .gitignore
-└── LICENSE
-
+├── TestedBin/                  # Sample ELF binaries for testing
+├── output/                      # Directory for generated analysis results
+├── images/                      # Images for documentation purposes
 ```
 
 ## Contribution
