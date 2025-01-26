@@ -100,49 +100,19 @@ Sample ELF binaries are available in the `TestedBin` directory for quick testing
 
 ## **Project Structure**
 
-```
--ELFInspect/
-│-- README.md
-│-- requirements.txt
-│-- setup.py
-│
-├── bin/
-│   ├── example1.elf
-│   ├── example2.elf
-│
-├── src/
-│   ├── __init__.py
-│   ├── BAT_Part2.py
-│   ├── header_extractor.py
-│   ├── disassembler.py
-│   ├── call_graph_generator.py
-│
-├── data/
-│   ├── FuncCallPattern.txt
-│   ├── SyscallPattern.txt
-│
-├── output/
-│   ├── example1_graph.png
-│   ├── analysis_results.txt
-│
-├── tests/
-│   ├── test_header_extractor.py
-│   ├── test_disassembler.py
-│   ├── test_call_graph_generator.py
-│
-├── docs/
-│   ├── installation_guide.md
-│   ├── usage_guide.md
-│   ├── api_reference.md
-│
-├── images/
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   ├── 3.jpg
-│
-├── .gitignore
-└── LICENSE
-
+```bash
+ELFInspect/
+│-- BAT_Part2.py              # Main script for ELF binary analysis
+│-- readelf.py                # Module for parsing ELF files
+│-- dfs.py                    # Utility module (graph traversal)
+│-- attr_types.py             # Attribute type definitions
+│-- FuncCallPattern.txt        # Function call pattern definitions
+│-- SyscallPattern.txt         # Syscall detection patterns
+│-- requirements.txt           # List of dependencies
+│-- README.md                  # Project documentation
+├── TestedBin/                  # Sample ELF binaries for testing
+├── output/                      # Directory for generated analysis results
+├── images/                      # Images for documentation purposes
 ```
 
 ## Contribution
