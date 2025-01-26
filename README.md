@@ -1,6 +1,6 @@
-# BAT - Binary Analysis tool 
+# ELFInspect
 
-BAT (Binary Analysis Tool) is a Python-based utility designed to analyze ELF (Executable and Linkable Format) binary files. It offers functionalities for inspecting ELF headers, disassembling code sections, visualizing control flow graphs, and detecting potential vulnerabilities using syscall patterns.
+ELFInspect  is a Python-based utility designed to analyze ELF (Executable and Linkable Format) binary files. It offers functionalities for inspecting ELF headers, disassembling code sections, visualizing control flow graphs, and detecting potential vulnerabilities using syscall patterns.
 
 ## Project Overview
 
@@ -79,7 +79,7 @@ Certain software attacks can be detected by analyzing syscall patterns. To achie
 
 #### ‫‪Vulnerability Detection
 
-BAT includes a feature to identify potential vulnerabilities by analyzing function and syscall patterns. Users can define custom patterns in the following files:
+ELFInspect includes a feature to identify potential vulnerabilities by analyzing function and syscall patterns. Users can define custom patterns in the following files:
 
 - `SyscallPattern.txt` – Contains syscall patterns for detection.
 - `FuncCallPattern.txt` – Allows users to define function call patterns.
@@ -101,7 +101,7 @@ Sample ELF binaries are available in the `TestedBin` directory for quick testing
 ## **Project Structure**
 
 ```
-BAT-Binary-Analysis-Tool/
+-ELFInspect/
 │-- README.md
 │-- requirements.txt
 │-- setup.py
